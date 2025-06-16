@@ -2,28 +2,28 @@ const prompt = require("prompt-sync")()
 
 const questions = [
     {
-        question: "Quelle est la capitale de la France ?",
-        options: ["1) Lyon", "2) Marseille", "3) Paris"],
+        question: "En combien de rounds se joue une partie de Valorant ?",
+        options: ["1) 11", "2) 12", "3) 13"],
         correct: "3"
     },
     {
-        question: "Quel est le symbole chimique de l'eau ?",
-        options: ["1) O2", "2) CO2", "3) H2O"],
+        question: "Lequel de ces agents est un dueliste ?",
+        options: ["1) Clove", "2) Vyse", "3) Reyna"],
         correct: "3"
     },
     {
-        question: "Qui a écrit 'Les Misérables' ?",
-        options: ["1) Victor Hugo", "2) Molière", "3) Voltaire"],
+        question: "Laquelle de ces maps Valorant est située au Maroc ?",
+        options: ["1) Bind", "2) Abyss", "3) Split"],
         correct: "1"
     },
     {
-        question: "Quel est le plus vaste océan du monde ?",
-        options: ["1) Océan Atlantique", "2) Océan Pacifique", "3) Océan Indien"],
+        question: "Laquelle de ces armes est une arme de poing ?",
+        options: ["1) Outlaw", "2) Sheriff", "3) Phantom"],
         correct: "2"
     },
     {
-        question: "Qui a peint la Joconde ?",
-        options: ["1) Léonard de Vinci", "2) Vincent Van Gogh", "3) Pablo Picasso"],
+        question: "Quelle équipe a gagné les champions 2024 ?",
+        options: ["1) EDG", "2) T1", "3) FNATIC"],
         correct: "1"
     }
 ];
@@ -42,10 +42,10 @@ for (let i = 0; i < questions.length; i++) {
     const userAnswer = prompt("Votre réponse (numéro) : ")
 
     if (userAnswer === q.correct) {
-        console.log("✅ Correct !")
+        console.log("Correct !")
         score++
     } else {
-        console.log("❌ Incorrect !")
+        console.log("Incorrect !")
     }
 }
 
@@ -57,7 +57,7 @@ if (score < 2) {
     console.log("Bof, tu peux mieux faire... : " + score + "/" + questions.length)
 
 } else {
-    console.log("Enfin quelqu'un d'intelligent ! : " + score + "/" + questions.length)
+    console.log("Enfin quelqu'un de calé ! : " + score + "/" + questions.length)
 }
 
 
